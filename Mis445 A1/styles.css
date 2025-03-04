@@ -22,14 +22,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 350px; /* Restrict the width */
 }
 
+/* Adjust the size of the main image */
 .left-side img {
-    width: 80%;
-    height: auto;
+    width: 280px; /* Smaller width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Limit height */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .right-side {
     flex: 1;
@@ -84,8 +89,9 @@ body {
 }
 
 .column img {
-    width: 80%;
-    height: auto;
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Make height equal to width */
+    object-fit: cover; /* Ensures the image fills the square without distortion */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
@@ -113,7 +119,10 @@ body {
     }
 
     .column {
-        width: 60%;
-        margin-bottom: 20px;
+        width: 80%;
+        margin-bottom: 200px;
     }
 }
+
+
+
