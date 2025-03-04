@@ -125,4 +125,93 @@ body {
 }
 
 
+/* Style for the Menu Bar */
+.menu-bar {
+    background-color: #ff6347; /* Tomato color */
+    padding: 10px 0;
+    text-align: center;
+}
 
+.menu-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between items */
+}
+
+.menu-bar ul li {
+    display: inline;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.menu-bar ul li a:hover {
+    background-color: #d44f3d; /* Slightly darker on hover */
+    border-radius: 5px;
+}
+
+.menu-bar {
+    background-color: #333;
+    padding: 10px 0;
+}
+.menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.menu-bar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.menu-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.menu-bar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Grid Layout for Pizza Items */
+.pizza-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.pizza-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pizza-item img {
+    width: 100%;
+    height: auto;
+}
+
+.pizza-item h2 {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.pizza-item p {
+    margin: 0 10px;
+}
+
+.pizza-item:hover {
+    transform: scale(1.05);
+}
